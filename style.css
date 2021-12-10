@@ -35,6 +35,12 @@ body {
 
 h1,h2,h3,h4,h5,h6,p, a {
     border: 2px solid rgb(179, 84, 84);
+
+.bg-image {
+        background-color: rgb(140,140,140);
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
 } 
 
 
@@ -156,9 +162,9 @@ p:last-child {
 
 /* Images & Background Images——————— */
 
-.bg-image {
-    background-color: grey;
+/*.bg-image {
+    background-color: rgb(140,140,140);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-}
+}*/
