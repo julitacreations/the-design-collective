@@ -110,8 +110,6 @@ p {
 }
 
 
-
-
 p:last-child {
     margin-bottom: 0;
 } 
@@ -124,9 +122,6 @@ a {
 nav a {
     padding: 0.25rem;
 }
-
-
-
 
 
 
@@ -143,6 +138,14 @@ nav a {
 .right  { text-align: right; }
 
 
+
+/* Icon Section ----------------*/
+
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
 
 
 /* Header & Footer Styles——————-*/
