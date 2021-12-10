@@ -35,6 +35,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,p, a {
     border: 2px solid rgb(179, 84, 84);
+}
 
 .bg-image {
         background-color: rgb(140,140,140);
