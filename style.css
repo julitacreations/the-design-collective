@@ -101,6 +101,10 @@ h2 {
     font-size: 2.6rem;
 }
 
+h3 {
+    font-size: 1.8rem;
+}
+
 
 p {
 	line-height: 1.4; 
@@ -123,6 +127,24 @@ nav a {
     padding: 0.25rem;
 }
 
+a:hover { color: #a2745c; }
+
+.button {
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+}
+
+.bg-dark .button:hover {
+    color: #d3b4a2;
+}
+
+.subtle { 
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
 
 
 /* General typography & universal styles——-----————*/
@@ -154,6 +176,10 @@ header {
     padding: 2% 5%;
 }
 
+footer a:hover { 
+    color: #d3b4a2; 
+}
+
 
 
 /* Images & Background Images——————— */
@@ -180,4 +206,27 @@ header {
 }
 .bg-mockup {
     background-image: url('/images/mockup.jpg');
+}
+
+
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    .hide-sm { display: none; }
+
+    .center-sm { text-align: center; }
+
+    .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+    
+    .bg-plant-2 {
+        background-image: url('/images/plant-2-light.png');
+        background-position: 45% 50%;
+    }
+    .flex-flip-sm { flex-direction: column-reverse; }
 }
