@@ -1,7 +1,68 @@
 ---
 layout: default
+features:
+ - title: Beautiful Designs
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum velit pariatur quisquam perferendis aliquam fuga.
+   featured_image: /images/placeholder-project.png
+ - title: Optimised Builds
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum velit pariatur quisquam perferendis aliquam fuga.
+   featured_image: /images/placeholder-project.png
 ---
 
+<!------Services Banner -------->
+
+<section class="grid-middle-right bg-image bg-plant-2 tall-70 padded">
+    <div class=col-6_sm-10 editable right> 
+        <h2> Our Services </h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum velit pariatur quisquam perferendis aliquam fuga. </p>
+    </div>
+</section>
+
+
+<!------Service Offers/ process -------->
+<section class="bg-green padded">
+    <div class="capped-width grid">
+        <div class="col-4_sm-12 padded-2"> 
+            <h3> Design. </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum quisquam perferendis aliquam fuga. </p>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum quisquam perferendis aliquam fuga. </p>
+        </div>
+        <div class="col-4_sm-12 padded-2"> 
+            <h3> Build. </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum quisquam perferendis aliquam fuga. </p>
+            <p>Amet consectetur adipisicing elit. Ea unde tempore sint corporis error hic sit nam quasi consequatur, amet animi in illum exercitationem sed sapiente sunt distinctio, minima impedit.</p>
+        </div>
+        <div class="col-4_sm-12 padded-2"> 
+            <h3> Optimise. </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos facilis cupiditate, reiciendis deserunt ex aspernatur aliquid quae totam iusto, minus corrupti voluptatibus illum quisquam perferendis aliquam fuga. </p>
+            <p>Consequuntur libero iusto quibusdam, tenetur deleniti quasi in saepe consectetur consequatur blanditiis perspiciatis? Ipsa laboriosam eius accusantium quod animi sed minima ipsam.</p>
+        </div>
+        <div class="col-12 padded-1 center"> 
+            <a href="/contact" class="button"> Get in touch! </a>
+        </div>
+    </div>
+</section>
+
+<!--Newsletter signup------>
+{% include newsletter-signup.html %}
+
+
+<!--Example Project----->
 <section>
-    SERVICES
+
+    {% for item in page.features limit:1 %}
+
+        <div class="grid flex-flip-alternate">
+            <div class="col-7_sm-12-middle padded">
+                <img src="{{ item.featured_image }}" alt="{{ item.title }}">
+            </div>
+            <div class="col-5_sm-12-middle padded"> 
+                <h3> {{ item.title }} </h3>
+                <p> {{ item.description }}</p>
+            </div>
+           
+        </div>
+
+    {% endfor %}
+
 </section>

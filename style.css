@@ -3,7 +3,7 @@
 colors: 
     rust #c29880
     dark-rust: #a2745c
-    green: #c29880
+    green: #9b9b81; 
 
     og rust = #c29880;
 
@@ -71,6 +71,10 @@ h1,h2,h3,h4,h5,h6,p, a {
 .margin-l { margin-left: 5%; }
 .margin-r { margin-right: 5%; }
 
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+
 
 /* Height Classes */ 
 
@@ -135,6 +139,14 @@ a:hover { color: #a2745c; }
     display: inline-block;
     font-weight: 400;
     color: white;
+}
+
+.button-2 {
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: #9b9b81; 
 }
 
 .bg-dark .button:hover {
@@ -214,6 +226,10 @@ footer a:hover {
     border-radius: 100%;
 }
 
+.landscape {
+    padding-bottom: 60%;
+}
+
 .bg-plant {
     background-image: url('/images/plant.jpg');
     background-position: 50% 43%;
@@ -229,6 +245,12 @@ footer a:hover {
 .bg-mockup {
     background-image: url('/images/mockup.jpg');
 }
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+
 
 /* Responsive Video ------*/
 .embed-container {
@@ -248,6 +270,46 @@ footer a:hover {
     width: 100%;
     height: 100%;
 }
+
+
+/* Contact Form Styles-----*/
+
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid #a2745c;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #9b9b81;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #a2745c;
+  font-weight: bold;
+}
+
+form .button {
+    border: 2px solid #a2745c;
+    background: none;
+    color: #a2745c;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+}
+
 
 
 /* SM - max-width in pixels approximately 768px */
